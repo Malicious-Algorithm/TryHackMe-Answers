@@ -1,0 +1,57 @@
+# Nmap 7.91 scan initiated Mon Aug 16 02:12:55 2021 as: nmap --min-rate 5000 -p- -vv -oN ../vulNet/vul-ports.txt 10.10.46.177
+Increasing send delay for 10.10.46.177 from 0 to 5 due to 628 out of 2091 dropped probes since last increase.
+Warning: 10.10.46.177 giving up on port because retransmission cap hit (10).
+Nmap scan report for vulnnet.thm (10.10.46.177)
+Host is up, received conn-refused (0.24s latency).
+Scanned at 2021-08-16 02:12:55 UTC for 22s
+Not shown: 65490 closed ports
+Reason: 65490 conn-refused
+PORT      STATE    SERVICE     REASON
+22/tcp    open     ssh         syn-ack
+80/tcp    open     http        syn-ack
+3652/tcp  filtered vxcrnbuport no-response
+4771/tcp  filtered unknown     no-response
+5429/tcp  filtered base        no-response
+6231/tcp  filtered unknown     no-response
+8484/tcp  filtered unknown     no-response
+8835/tcp  filtered unknown     no-response
+9622/tcp  filtered unknown     no-response
+11743/tcp filtered unknown     no-response
+12468/tcp filtered unknown     no-response
+14110/tcp filtered unknown     no-response
+14156/tcp filtered unknown     no-response
+15670/tcp filtered unknown     no-response
+15849/tcp filtered unknown     no-response
+16209/tcp filtered unknown     no-response
+17213/tcp filtered unknown     no-response
+18769/tcp filtered ique        no-response
+20957/tcp filtered unknown     no-response
+21292/tcp filtered unknown     no-response
+23895/tcp filtered unknown     no-response
+25057/tcp filtered unknown     no-response
+25123/tcp filtered unknown     no-response
+26969/tcp filtered unknown     no-response
+29597/tcp filtered unknown     no-response
+31940/tcp filtered unknown     no-response
+32444/tcp filtered unknown     no-response
+36986/tcp filtered unknown     no-response
+39623/tcp filtered unknown     no-response
+42554/tcp filtered unknown     no-response
+44264/tcp filtered unknown     no-response
+45178/tcp filtered unknown     no-response
+45666/tcp filtered unknown     no-response
+47095/tcp filtered unknown     no-response
+49811/tcp filtered unknown     no-response
+50213/tcp filtered unknown     no-response
+52695/tcp filtered unknown     no-response
+52982/tcp filtered unknown     no-response
+54055/tcp filtered unknown     no-response
+54381/tcp filtered unknown     no-response
+55441/tcp filtered unknown     no-response
+58415/tcp filtered unknown     no-response
+62242/tcp filtered unknown     no-response
+62524/tcp filtered unknown     no-response
+64619/tcp filtered unknown     no-response
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Mon Aug 16 02:13:17 2021 -- 1 IP address (1 host up) scanned in 24.06 seconds

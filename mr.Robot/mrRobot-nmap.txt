@@ -1,0 +1,1 @@
+# Nmap 7.91 scan initiated Thu Jul 29 00:19:30 2021 as: nmap -sC -sV -p- -T4 -vv -oN /home/kali/Fer/tryhackme/mr.Robot/mrRobot-nmap.txt 10.10.74.225

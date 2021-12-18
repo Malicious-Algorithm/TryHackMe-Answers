@@ -1,0 +1,13 @@
+# Nmap 7.91 scan initiated Sun Sep  5 02:06:38 2021 as: nmap --min-rate 5000 -vv -p- -oN ../battery/battery-ports.txt 10.10.191.27
+Warning: 10.10.191.27 giving up on port because retransmission cap hit (10).
+Nmap scan report for 10.10.191.27
+Host is up, received syn-ack (0.24s latency).
+Scanned at 2021-09-05 02:06:38 UTC for 22s
+Not shown: 65374 closed ports, 159 filtered ports
+Reason: 65374 conn-refused and 159 no-responses
+PORT   STATE SERVICE REASON
+22/tcp open  ssh     syn-ack
+80/tcp open  http    syn-ack
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Sun Sep  5 02:07:00 2021 -- 1 IP address (1 host up) scanned in 22.28 seconds

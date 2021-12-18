@@ -1,0 +1,16 @@
+# Nmap 7.91 scan initiated Sat Sep  4 17:24:21 2021 as: nmap --min-rate 5000 -vv -p- -oN ../watcher/watcher-ports.txt 10.10.141.254
+Increasing send delay for 10.10.141.254 from 0 to 5 due to 205 out of 683 dropped probes since last increase.
+Warning: 10.10.141.254 giving up on port because retransmission cap hit (10).
+Increasing send delay for 10.10.141.254 from 640 to 1000 due to 814 out of 2711 dropped probes since last increase.
+Nmap scan report for 10.10.141.254
+Host is up, received syn-ack (0.24s latency).
+Scanned at 2021-09-04 17:24:21 UTC for 83s
+Not shown: 63970 closed ports, 1562 filtered ports
+Reason: 63970 conn-refused and 1562 no-responses
+PORT   STATE SERVICE REASON
+21/tcp open  ftp     syn-ack
+22/tcp open  ssh     syn-ack
+80/tcp open  http    syn-ack
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Sat Sep  4 17:25:44 2021 -- 1 IP address (1 host up) scanned in 83.67 seconds

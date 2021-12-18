@@ -1,0 +1,15 @@
+# Nmap 7.91 scan initiated Sun Aug  8 22:47:47 2021 as: nmap --min-rate 5000 -vv -p- -Pn -n -oN ../wonderland/wond-nmap.txt 10.10.193.187
+Increasing send delay for 10.10.193.187 from 0 to 5 due to 1693 out of 5641 dropped probes since last increase.
+Increasing send delay for 10.10.193.187 from 320 to 640 due to 1266 out of 4219 dropped probes since last increase.
+Warning: 10.10.193.187 giving up on port because retransmission cap hit (10).
+Nmap scan report for 10.10.193.187
+Host is up, received user-set (0.27s latency).
+Scanned at 2021-08-08 22:47:47 UTC for 85s
+Not shown: 56966 closed ports, 8567 filtered ports
+Reason: 56966 resets and 8567 no-responses
+PORT   STATE SERVICE REASON
+22/tcp open  ssh     syn-ack ttl 61
+80/tcp open  http    syn-ack ttl 61
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Sun Aug  8 22:49:12 2021 -- 1 IP address (1 host up) scanned in 84.92 seconds

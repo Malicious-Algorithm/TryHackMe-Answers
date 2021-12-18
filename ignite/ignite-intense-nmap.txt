@@ -1,0 +1,19 @@
+# Nmap 7.91 scan initiated Tue Aug  3 12:39:25 2021 as: nmap -sC -sV -T4 -vv -p- -oN ../ignite/ignite-intense-nmap.txt 10.10.141.240
+Increasing send delay for 10.10.141.240 from 0 to 5 due to 1177 out of 2942 dropped probes since last increase.
+Nmap scan report for 10.10.141.240
+Host is up, received timestamp-reply ttl 61 (0.29s latency).
+Scanned at 2021-08-03 12:39:27 UTC for 480s
+Not shown: 65534 closed ports
+Reason: 65534 resets
+PORT   STATE SERVICE REASON         VERSION
+80/tcp open  http    syn-ack ttl 61 Apache httpd 2.4.18 ((Ubuntu))
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+| http-robots.txt: 1 disallowed entry 
+|_/fuel/
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+|_http-title: Welcome to FUEL CMS
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Aug  3 12:47:27 2021 -- 1 IP address (1 host up) scanned in 481.79 seconds

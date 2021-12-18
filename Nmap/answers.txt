@@ -1,0 +1,58 @@
+This machine on "www.tryhackme.com" is called "Nmap" and here i'll demonstrate the nmap scripts i've runned against
+ the given host.
+
+1) Does the target (10.10.34.117)respond to ICMP (ping) requests (Y/N)?
+	- No  -> ping -c 1 10.10.34.117    -> 100% packet loss
+
+
+2)Perform an Xmas scan on the first 999 ports of the target -- how many ports are shown to be open or filtered?
+	- 999  -> sudo nmap -sX -Pn -vv 10.10.34.117 
+
+
+3)There is a reason given for this -- what is it?
+	- no-response  -> sudo nmap -sX -Pn -vv 10.10.34.117
+
+		this is beacose the ports are open|filtered by the firewall
+
+4)Perform a TCP SYN scan on the first 5000 ports of the target -- how many ports are shown to be open?
+	- 5  -> sudo nmap -sS -Pn -vv 10.10.34.117
+
+	Sample: 
+	
+Completed SYN Stealth Scan at 16:53, 34.14s elapsed (5000 total ports)
+Nmap scan report for 10.10.34.117
+Host is up, received user-set (0.24s latency).
+Scanned at 2021-07-04 16:53:00 UTC for 34s
+Not shown: 4995 filtered ports
+Reason: 4995 no-responses
+PORT     STATE SERVICE       REASON
+21/tcp   open  ftp           syn-ack ttl 125
+53/tcp   open  domain        syn-ack ttl 125
+80/tcp   open  http          syn-ack ttl 125
+135/tcp  open  msrpc         syn-ack ttl 125
+3389/tcp open  ms-wbt-server syn-ack ttl 125
+
+
+5)Open Wireshark (see Cryillic's Wireshark Room for instructions) and perform a TCP Connect scan against port 80 on the target, monitoring the results. Make sure you understand what's going on.
+
+	-No answer needed 
+
+6)Deploy the ftp-anon script against the box. Can Nmap login successfully to the FTP server on port 21? (Y/N)
+	-Yes
+
+	-> locate ftp-anon
+ 	-> i have it 
+	-> sudo nmap -Pn -p21 --script=ftp.anon.nse -vv 10.10.34.117	
+
+Host is up, received user-set (0.24s latency).
+Scanned at 2021-07-04 17:08:13 UTC for 32s
+
+PORT   STATE SERVICE REASON
+21/tcp open  ftp     syn-ack ttl 125
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+|_Can't get directory listing: TIMEOUT
+
+NSE: Script Post-scanning.
+
+
+Well this was basic scanning using nmap. But it was worth it, simply due to the fact that i get to review lots of things i've learned on youtube videos. Yay!

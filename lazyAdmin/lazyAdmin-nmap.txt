@@ -1,0 +1,54 @@
+# Nmap 7.91 scan initiated Wed Jul 28 23:58:19 2021 as: nmap --min-rate 5000 -p- -vv -Pn -oN ../lazyAdmin/lazyAdmin-nmap.txt 10.10.74.225
+Increasing send delay for 10.10.74.225 from 0 to 5 due to 19 out of 61 dropped probes since last increase.
+Increasing send delay for 10.10.74.225 from 5 to 10 due to 11 out of 11 dropped probes since last increase.
+Nmap scan report for 10.10.74.225
+Host is up, received user-set (0.29s latency).
+Scanned at 2021-07-28 23:58:19 UTC for 41s
+Not shown: 65493 filtered ports
+Reason: 65493 no-responses
+PORT      STATE  SERVICE          REASON
+21/tcp    closed ftp              conn-refused
+22/tcp    open   ssh              syn-ack
+23/tcp    closed telnet           conn-refused
+25/tcp    closed smtp             conn-refused
+53/tcp    closed domain           conn-refused
+80/tcp    open   http             syn-ack
+110/tcp   closed pop3             conn-refused
+111/tcp   closed rpcbind          conn-refused
+113/tcp   closed ident            conn-refused
+135/tcp   closed msrpc            conn-refused
+139/tcp   closed netbios-ssn      conn-refused
+199/tcp   closed smux             conn-refused
+256/tcp   closed fw1-secureremote conn-refused
+443/tcp   closed https            conn-refused
+445/tcp   closed microsoft-ds     conn-refused
+587/tcp   closed submission       conn-refused
+993/tcp   closed imaps            conn-refused
+995/tcp   closed pop3s            conn-refused
+1025/tcp  closed NFS-or-IIS       conn-refused
+1720/tcp  closed h323q931         conn-refused
+1723/tcp  closed pptp             conn-refused
+1755/tcp  closed wms              conn-refused
+3306/tcp  closed mysql            conn-refused
+5900/tcp  closed vnc              conn-refused
+8080/tcp  closed http-proxy       conn-refused
+8839/tcp  closed unknown          conn-refused
+9563/tcp  closed unknown          conn-refused
+18614/tcp closed unknown          conn-refused
+20243/tcp closed unknown          conn-refused
+20324/tcp closed unknown          conn-refused
+21702/tcp closed unknown          conn-refused
+37458/tcp closed unknown          conn-refused
+37757/tcp closed unknown          conn-refused
+39670/tcp closed unknown          conn-refused
+45927/tcp closed unknown          conn-refused
+55320/tcp closed unknown          conn-refused
+56137/tcp closed unknown          conn-refused
+57970/tcp closed unknown          conn-refused
+58945/tcp closed unknown          conn-refused
+61229/tcp closed unknown          conn-refused
+62875/tcp closed unknown          conn-refused
+63702/tcp closed unknown          conn-refused
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Wed Jul 28 23:59:00 2021 -- 1 IP address (1 host up) scanned in 40.78 seconds

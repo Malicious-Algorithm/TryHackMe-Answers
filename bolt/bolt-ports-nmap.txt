@@ -1,0 +1,57 @@
+# Nmap 7.91 scan initiated Wed Aug  4 12:04:49 2021 as: nmap --min-rate 5000 -p- -vv -oN ../bolt/bolt-ports-nmap.txt 10.10.175.152
+Warning: 10.10.175.152 giving up on port because retransmission cap hit (10).
+Nmap scan report for 10.10.175.152
+Host is up, received syn-ack (0.24s latency).
+Scanned at 2021-08-04 12:04:49 UTC for 21s
+Not shown: 65489 closed ports
+Reason: 65489 conn-refused
+PORT      STATE    SERVICE   REASON
+22/tcp    open     ssh       syn-ack
+80/tcp    open     http      syn-ack
+415/tcp   filtered bnet      no-response
+722/tcp   filtered unknown   no-response
+4353/tcp  filtered f5-iquery no-response
+5081/tcp  filtered sdl-ets   no-response
+7024/tcp  filtered vmsvc     no-response
+7274/tcp  filtered oma-rlp-s no-response
+8000/tcp  open     http-alt  syn-ack
+11661/tcp filtered unknown   no-response
+11805/tcp filtered unknown   no-response
+13983/tcp filtered unknown   no-response
+14026/tcp filtered unknown   no-response
+14462/tcp filtered unknown   no-response
+16799/tcp filtered unknown   no-response
+17884/tcp filtered unknown   no-response
+20374/tcp filtered unknown   no-response
+23041/tcp filtered unknown   no-response
+25275/tcp filtered unknown   no-response
+25382/tcp filtered unknown   no-response
+28669/tcp filtered unknown   no-response
+30617/tcp filtered unknown   no-response
+33987/tcp filtered unknown   no-response
+34028/tcp filtered unknown   no-response
+34456/tcp filtered unknown   no-response
+37162/tcp filtered unknown   no-response
+40095/tcp filtered unknown   no-response
+40462/tcp filtered unknown   no-response
+41364/tcp filtered unknown   no-response
+42079/tcp filtered unknown   no-response
+43992/tcp filtered unknown   no-response
+46100/tcp filtered unknown   no-response
+51266/tcp filtered unknown   no-response
+52282/tcp filtered unknown   no-response
+52810/tcp filtered unknown   no-response
+54358/tcp filtered unknown   no-response
+55586/tcp filtered unknown   no-response
+55740/tcp filtered unknown   no-response
+56168/tcp filtered unknown   no-response
+56556/tcp filtered unknown   no-response
+57329/tcp filtered unknown   no-response
+58083/tcp filtered unknown   no-response
+59963/tcp filtered unknown   no-response
+64142/tcp filtered unknown   no-response
+65373/tcp filtered unknown   no-response
+65503/tcp filtered unknown   no-response
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Wed Aug  4 12:05:10 2021 -- 1 IP address (1 host up) scanned in 20.89 seconds

@@ -1,0 +1,16 @@
+# Nmap 7.91 scan initiated Thu Aug 19 17:11:50 2021 as: nmap --min-rate 5000 -p- -vv -oN ../sustah/sustah-ports.txt 10.10.128.109
+Increasing send delay for 10.10.128.109 from 0 to 5 due to 435 out of 1449 dropped probes since last increase.
+Warning: 10.10.128.109 giving up on port because retransmission cap hit (10).
+Increasing send delay for 10.10.128.109 from 640 to 1000 due to 12973 out of 43242 dropped probes since last increase.
+Nmap scan report for 10.10.128.109
+Host is up, received syn-ack (0.24s latency).
+Scanned at 2021-08-19 17:11:50 UTC for 43s
+Not shown: 60047 closed ports, 5485 filtered ports
+Reason: 60047 conn-refused and 5485 no-responses
+PORT     STATE SERVICE REASON
+22/tcp   open  ssh     syn-ack
+80/tcp   open  http    syn-ack
+8085/tcp open  unknown syn-ack
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Thu Aug 19 17:12:33 2021 -- 1 IP address (1 host up) scanned in 43.08 seconds

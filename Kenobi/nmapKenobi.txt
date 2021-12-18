@@ -1,0 +1,24 @@
+# Nmap 7.91 scan initiated Fri Jul 23 22:58:10 2021 as: nmap -p- --min-rate=5000 -vv -Pn -n -oN /home/kali/Fer/tryhackme/Kenobi/nmapKenobi.txt 10.10.115.254
+Increasing send delay for 10.10.115.254 from 0 to 5 due to 1084 out of 3611 dropped probes since last increase.
+Warning: 10.10.115.254 giving up on port because retransmission cap hit (10).
+Increasing send delay for 10.10.115.254 from 640 to 1000 due to 659 out of 2196 dropped probes since last increase.
+Nmap scan report for 10.10.115.254
+Host is up, received user-set (0.35s latency).
+Scanned at 2021-07-23 22:58:10 UTC for 92s
+Not shown: 56655 closed ports, 8869 filtered ports
+Reason: 56655 resets and 8869 no-responses
+PORT      STATE SERVICE      REASON
+21/tcp    open  ftp          syn-ack ttl 61
+22/tcp    open  ssh          syn-ack ttl 61
+80/tcp    open  http         syn-ack ttl 61
+111/tcp   open  rpcbind      syn-ack ttl 61
+139/tcp   open  netbios-ssn  syn-ack ttl 61
+445/tcp   open  microsoft-ds syn-ack ttl 61
+2049/tcp  open  nfs          syn-ack ttl 61
+33679/tcp open  unknown      syn-ack ttl 61
+43289/tcp open  unknown      syn-ack ttl 61
+47429/tcp open  unknown      syn-ack ttl 61
+49971/tcp open  unknown      syn-ack ttl 61
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Fri Jul 23 22:59:42 2021 -- 1 IP address (1 host up) scanned in 92.11 seconds

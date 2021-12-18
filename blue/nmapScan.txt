@@ -1,0 +1,89 @@
+# Nmap 7.91 scan initiated Mon Jul  5 18:52:13 2021 as: nmap -sC -sV -Pn -oN nmapScan.txt -vv 10.10.237.196
+Nmap scan report for 10.10.237.196
+Host is up, received user-set (0.25s latency).
+Scanned at 2021-07-05 18:52:14 UTC for 88s
+Not shown: 991 closed ports
+Reason: 991 resets
+PORT      STATE SERVICE      REASON          VERSION
+135/tcp   open  msrpc        syn-ack ttl 125 Microsoft Windows RPC
+139/tcp   open  netbios-ssn  syn-ack ttl 125 Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds syn-ack ttl 125 Windows 7 Professional 7601 Service Pack 1 microsoft-ds (workgroup: WORKGROUP)
+3389/tcp  open  tcpwrapped   syn-ack ttl 125
+| ssl-cert: Subject: commonName=Jon-PC
+| Issuer: commonName=Jon-PC
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2021-07-04T21:48:36
+| Not valid after:  2022-01-03T21:48:36
+| MD5:   3124 104a 0252 f3d8 93ac 0be9 b776 1dbc
+| SHA-1: 3577 8add 499e 4e8b 1e19 9475 df0a fb2c 00d3 6861
+| -----BEGIN CERTIFICATE-----
+| MIIC0DCCAbigAwIBAgIQIAC+r9tcUIpIM9IgqR1d5jANBgkqhkiG9w0BAQUFADAR
+| MQ8wDQYDVQQDEwZKb24tUEMwHhcNMjEwNzA0MjE0ODM2WhcNMjIwMTAzMjE0ODM2
+| WjARMQ8wDQYDVQQDEwZKb24tUEMwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK
+| AoIBAQC5cd7nCf5WvLJ9rwUCXtn+y34R3CevbRocreE9FBPkkLw8WWEtGOLR3J7F
+| seta/+LoqiLjypfkUVQZtLJ4COeGVfseNMVCtwqRXZvG+ug2TDPREJKB+gCWdmDL
+| Nj7jxNAc+KNBxjdIRZ+5Eu6mi+xzzzkgleeWcnLHnb11Z5zYCtWGnYr1v5t8bX3U
+| PUV9Nst9VM5ujKPIYQR/0o2gDw+k3EnBhZTXjabQwm3KSfctu2wj9HiQ2Dv5w4jv
+| lh3CNGZK7zNg4L9svPpBkh+yY2X9dhtzgDfybNWj4QOA5cOFY6yojfdchJbId1Ak
+| 6G9N/qh7OFFib0Cb4qjhOznPcWJ9AgMBAAGjJDAiMBMGA1UdJQQMMAoGCCsGAQUF
+| BwMBMAsGA1UdDwQEAwIEMDANBgkqhkiG9w0BAQUFAAOCAQEAiQXVn24M2XM3t4Va
+| dlCM26eGHbAy09JASn9ICziUB1/tbp9d9q9sQ5LhothX/S76jlzqFzEBbgZhMf4t
+| TpdqMXKrQuoFcnt1sPW/zoPWuGMmsnsL5PrQ3pRzlH54Zde05NQaGJszAPRB9axo
+| ZCeFCcbgBE+86GPzUBNjizfhXrkG3zvPf7z6iN8cPJUW/sTYAsOFB6sutWRHbAX9
+| s3chiREr7P5CfOxmmHTpNU8cKu/BdZg3A56cMdX4OZTXE9BrMRzndCL6IkSrdki5
+| 1dRGPl145Ne9SRxuO7t99kv0jYDAxVI0tstkTYAEJyWnM6XuM/+D7vOul2dWgBTx
+| owocbw==
+|_-----END CERTIFICATE-----
+|_ssl-date: 2021-07-05T21:53:41+00:00; +2h59m59s from scanner time.
+49152/tcp open  msrpc        syn-ack ttl 125 Microsoft Windows RPC
+49153/tcp open  msrpc        syn-ack ttl 125 Microsoft Windows RPC
+49154/tcp open  msrpc        syn-ack ttl 125 Microsoft Windows RPC
+49158/tcp open  msrpc        syn-ack ttl 125 Microsoft Windows RPC
+49160/tcp open  msrpc        syn-ack ttl 125 Microsoft Windows RPC
+Service Info: Host: JON-PC; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: 4h14m59s, deviation: 2h30m00s, median: 2h59m58s
+| nbstat: NetBIOS name: JON-PC, NetBIOS user: <unknown>, NetBIOS MAC: 02:c2:3a:03:56:97 (unknown)
+| Names:
+|   JON-PC<00>           Flags: <unique><active>
+|   WORKGROUP<00>        Flags: <group><active>
+|   JON-PC<20>           Flags: <unique><active>
+|   WORKGROUP<1e>        Flags: <group><active>
+|   WORKGROUP<1d>        Flags: <unique><active>
+|   \x01\x02__MSBROWSE__\x02<01>  Flags: <group><active>
+| Statistics:
+|   02 c2 3a 03 56 97 00 00 00 00 00 00 00 00 00 00 00
+|   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+|_  00 00 00 00 00 00 00 00 00 00 00 00 00 00
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 62570/tcp): CLEAN (Couldn't connect)
+|   Check 2 (port 64251/tcp): CLEAN (Couldn't connect)
+|   Check 3 (port 58252/udp): CLEAN (Timeout)
+|   Check 4 (port 23675/udp): CLEAN (Failed to receive data)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+| smb-os-discovery: 
+|   OS: Windows 7 Professional 7601 Service Pack 1 (Windows 7 Professional 6.1)
+|   OS CPE: cpe:/o:microsoft:windows_7::sp1:professional
+|   Computer name: Jon-PC
+|   NetBIOS computer name: JON-PC\x00
+|   Workgroup: WORKGROUP\x00
+|_  System time: 2021-07-05T16:53:24-05:00
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2021-07-05T21:53:24
+|_  start_date: 2021-07-05T21:48:34
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Jul  5 18:53:42 2021 -- 1 IP address (1 host up) scanned in 88.95 seconds

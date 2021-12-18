@@ -1,0 +1,19 @@
+# Nmap 7.91 scan initiated Sat Sep  4 17:27:35 2021 as: nmap -sC -sV -p- -T4 -oN ../watcher/intense.txt 10.10.141.254
+Nmap scan report for 10.10.141.254
+Host is up (0.24s latency).
+Not shown: 65532 closed ports
+PORT   STATE SERVICE VERSION
+21/tcp open  ftp     vsftpd 3.0.3
+22/tcp open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 e1:80:ec:1f:26:9e:32:eb:27:3f:26:ac:d2:37:ba:96 (RSA)
+|   256 36:ff:70:11:05:8e:d4:50:7a:29:91:58:75:ac:2e:76 (ECDSA)
+|_  256 48:d2:3e:45:da:0c:f0:f6:65:4e:f9:78:97:37:aa:8a (ED25519)
+80/tcp open  http    Apache httpd 2.4.29 ((Ubuntu))
+|_http-generator: Jekyll v4.1.1
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+|_http-title: Corkplacemats
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Sep  4 17:40:54 2021 -- 1 IP address (1 host up) scanned in 799.27 seconds

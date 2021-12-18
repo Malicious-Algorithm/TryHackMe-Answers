@@ -1,0 +1,3 @@
+/root/key-3-of-3.txt
+cat /root/key-3-of-3.txt
+04787ddef27c3dee1ee161b21670b4e4

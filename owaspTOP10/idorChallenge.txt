@@ -1,0 +1,32 @@
+# Nmap 7.91 scan initiated Tue Jul 13 10:55:17 2021 as: nmap -sC -sV -vv -oN ./idorChallenge.txt 10.10.110.90
+Nmap scan report for 10.10.110.90
+Host is up, received conn-refused (0.24s latency).
+Scanned at 2021-07-13 10:55:18 UTC for 25s
+Not shown: 996 closed ports
+Reason: 996 conn-refused
+PORT   STATE SERVICE REASON  VERSION
+22/tcp open  ssh     syn-ack OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 4b:81:7b:8f:60:6c:20:0d:04:0d:ef:ed:47:40:66:02 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCfuL36wRtaBXFwVY7x9CovZZfuO46QupdKTxTP57YRUVqTy1rKJloXacfian17+tRiL55DEeXzOpq2Pqw3hZeduqMyt+mI5hYX1rEygOG4CVfEj3qxRDKcIq8HzaEtOIa0IWkW4ONTD9L6shK7a1b2BePLDor+vFk6+bU11fmQnXhJinSJBV2eZ7COtvKAXSTxxKmV9qJdXvfhignR8RotdMKeKm/8eOIP8q8fz74lRBF9N8ReI1IFLs6fsQF0fHHuY+2zrNn9NWtPCNbFhM3ljcGvIOQaJaMDzMVDlSi762Kzh58yKfklrcTt2q08434sfLAWzSPLrgZx2YCb8xRl
+|   256 45:82:19:b2:7f:b7:36:36:ce:81:52:00:61:25:fd:90 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBIrR8U4bGG67/h4GAc8A1Gd1LazwQCsmOC1t0Hnj6iT0T5xrVYADqKtQ5m6gtSEzX7QpidqCb0xzB1J8c8kvLDs=
+|   256 1a:3e:d8:f9:07:70:12:c9:59:69:75:02:8a:86:26:67 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEnxm6pnYdjPWSbnL2phPtfLBLwptD7Ltb4ejf7BBNOH
+80/tcp open  http    syn-ack PHP cli server 5.5 or later (PHP 7.2.24-0ubuntu0.18.04.6)
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-title: Site doesn't have a title (text/html; charset=UTF-8).
+81/tcp open  http    syn-ack PHP cli server 5.5 or later (PHP 7.2.24-0ubuntu0.18.04.6)
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-title: Site doesn't have a title (text/html; charset=UTF-8).
+82/tcp open  http    syn-ack PHP cli server 5.5 or later (PHP 7.2.24-0ubuntu0.18.04.6)
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-title: Site doesn't have a title (text/html; charset=UTF-8).
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Jul 13 10:55:43 2021 -- 1 IP address (1 host up) scanned in 26.37 seconds

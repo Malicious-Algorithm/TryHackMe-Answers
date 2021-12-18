@@ -1,0 +1,16 @@
+# Nmap 7.91 scan initiated Sun Aug 29 23:12:32 2021 as: nmap --min-rate 5000 -p- -vv -oN ../yearOfTheRabbit/year-ports.txt 10.10.54.6
+Increasing send delay for 10.10.54.6 from 0 to 5 due to 124 out of 412 dropped probes since last increase.
+Warning: 10.10.54.6 giving up on port because retransmission cap hit (10).
+Increasing send delay for 10.10.54.6 from 640 to 1000 due to 3163 out of 10542 dropped probes since last increase.
+Nmap scan report for 10.10.54.6
+Host is up, received syn-ack (0.24s latency).
+Scanned at 2021-08-29 23:12:32 UTC for 27s
+Not shown: 65205 closed ports, 327 filtered ports
+Reason: 65205 conn-refused and 327 no-responses
+PORT   STATE SERVICE REASON
+21/tcp open  ftp     syn-ack
+22/tcp open  ssh     syn-ack
+80/tcp open  http    syn-ack
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Sun Aug 29 23:12:59 2021 -- 1 IP address (1 host up) scanned in 27.24 seconds

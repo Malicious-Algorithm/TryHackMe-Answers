@@ -1,0 +1,10 @@
+# Nmap 7.91 scan initiated Sat Jul 24 11:01:12 2021 as: nmap -p 111 -vv --script=nfs-ls,nfs-statfs,nfs-showmount -oN /home/kali/Fer/tryhackme/Kenobi/rpcNmapKenobi.txt 10.10.122.134
+Nmap scan report for 10.10.122.134
+Host is up, received reset ttl 125 (0.0033s latency).
+Scanned at 2021-07-24 11:01:12 UTC for 0s
+
+PORT    STATE    SERVICE REASON
+111/tcp filtered rpcbind no-response
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Sat Jul 24 11:01:12 2021 -- 1 IP address (1 host up) scanned in 0.81 seconds

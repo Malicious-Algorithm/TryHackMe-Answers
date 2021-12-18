@@ -1,0 +1,83 @@
+# Nmap 7.91 scan initiated Wed Aug  4 17:41:47 2021 as: nmap --min-rate 5000 -p- -vv -oN ../wgelCTF/wgel-ports-nmap.txt 10.10.249.110
+Warning: 10.10.249.110 giving up on port because retransmission cap hit (10).
+Increasing send delay for 10.10.249.110 from 320 to 640 due to 7070 out of 23566 dropped probes since last increase.
+Increasing send delay for 10.10.249.110 from 640 to 1000 due to 10133 out of 33775 dropped probes since last increase.
+Nmap scan report for 10.10.249.110
+Host is up, received conn-refused (0.25s latency).
+Scanned at 2021-08-04 17:41:47 UTC for 28s
+Not shown: 65465 closed ports
+Reason: 65465 conn-refused
+PORT      STATE    SERVICE        REASON
+22/tcp    open     ssh            syn-ack
+80/tcp    open     http           syn-ack
+1958/tcp  filtered dxadmind       no-response
+2213/tcp  filtered kali           no-response
+2535/tcp  filtered madcap         no-response
+3666/tcp  filtered eserver-pap    no-response
+4200/tcp  filtered vrml-multi-use no-response
+4487/tcp  filtered prex-tcp       no-response
+5868/tcp  filtered diameters      no-response
+7247/tcp  filtered unknown        no-response
+8334/tcp  filtered unknown        no-response
+8447/tcp  filtered unknown        no-response
+8563/tcp  filtered unknown        no-response
+8732/tcp  filtered dtp-net        no-response
+9060/tcp  filtered CardWeb-IO     no-response
+11399/tcp filtered unknown        no-response
+12135/tcp filtered unknown        no-response
+12967/tcp filtered unknown        no-response
+13570/tcp filtered unknown        no-response
+13888/tcp filtered unknown        no-response
+16602/tcp filtered unknown        no-response
+18212/tcp filtered unknown        no-response
+18236/tcp filtered unknown        no-response
+18418/tcp filtered unknown        no-response
+19840/tcp filtered unknown        no-response
+20145/tcp filtered unknown        no-response
+20388/tcp filtered unknown        no-response
+20870/tcp filtered unknown        no-response
+22435/tcp filtered unknown        no-response
+23080/tcp filtered unknown        no-response
+25470/tcp filtered unknown        no-response
+25722/tcp filtered unknown        no-response
+26141/tcp filtered unknown        no-response
+27443/tcp filtered unknown        no-response
+28444/tcp filtered unknown        no-response
+30047/tcp filtered unknown        no-response
+30670/tcp filtered unknown        no-response
+31518/tcp filtered unknown        no-response
+33862/tcp filtered unknown        no-response
+36277/tcp filtered unknown        no-response
+37142/tcp filtered unknown        no-response
+37304/tcp filtered unknown        no-response
+38459/tcp filtered unknown        no-response
+40706/tcp filtered unknown        no-response
+40787/tcp filtered unknown        no-response
+42054/tcp filtered unknown        no-response
+42804/tcp filtered unknown        no-response
+44938/tcp filtered unknown        no-response
+48511/tcp filtered unknown        no-response
+49566/tcp filtered unknown        no-response
+50202/tcp filtered unknown        no-response
+50742/tcp filtered unknown        no-response
+50979/tcp filtered unknown        no-response
+50996/tcp filtered unknown        no-response
+52677/tcp filtered unknown        no-response
+52702/tcp filtered unknown        no-response
+53032/tcp filtered unknown        no-response
+53526/tcp filtered unknown        no-response
+54081/tcp filtered unknown        no-response
+54538/tcp filtered unknown        no-response
+56047/tcp filtered unknown        no-response
+58380/tcp filtered unknown        no-response
+58814/tcp filtered unknown        no-response
+59700/tcp filtered unknown        no-response
+60156/tcp filtered unknown        no-response
+60193/tcp filtered unknown        no-response
+61826/tcp filtered unknown        no-response
+62457/tcp filtered unknown        no-response
+64088/tcp filtered unknown        no-response
+65402/tcp filtered unknown        no-response
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Wed Aug  4 17:42:15 2021 -- 1 IP address (1 host up) scanned in 27.44 seconds
